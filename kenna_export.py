@@ -123,7 +123,7 @@ class Kenna:
             fn = f"{file}.{self._file_type}{ext}"
             logger.warning(f"filepath's filename UPDATED from {basename} to {fn}")
 
-            path_update = f"{dirname}{fn}"
+            path_update = os.path.join(dirname, fn)
 
         else:
             # filepath was ok, return itself
